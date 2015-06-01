@@ -1,0 +1,8 @@
+﻿Build started 01/06/2015 00:35:10.
+     1>Project "C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\CPUMonitor\CPUMonitor.vcxproj" on node 2 (Clean target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppClean.targets(75,5): warning : Access to the path 'C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\x64\Release\CPUMonitor.exe' is denied.
+     1>Done Building Project "C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\CPUMonitor\CPUMonitor.vcxproj" (Clean target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.03
