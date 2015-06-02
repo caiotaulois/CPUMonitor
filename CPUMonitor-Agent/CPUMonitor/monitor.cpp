@@ -4,6 +4,9 @@
 #include "windows.h"
 #include <windows.h>
 #include <stdio.h>
+#include <cstring>
+#include <atlstr.h>
+#include <vector>
 
 #include <curl/curl.h>
 
@@ -122,6 +125,10 @@ int main() {
 	CURL *curl;
 	CURLcode res;
 
+	vector<string> vec;
+	stringstream ss;
+	string json;
+
 	curl = curl_easy_init();
 	for (;;){
 		while (curl) {		
@@ -139,13 +146,30 @@ int main() {
 
 			stringstream ss;
 			write_json(ss, pt);
-			string json = ss.str();
+			json = ss.str();
 			json = "json=" + json;
 
 			curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 			curl_easy_setopt(curl, CURLOPT_POSTFIELDS, json.c_str());
 			res = curl_easy_perform(curl);
-			curl_easy_cleanup(curl);
+			
+			if (res == 0) {
+				//cout << "enviado: " << json << endl;
+				for (int i=vec.size(); i>0; i--){
+					curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+					curl_easy_setopt(curl, CURLOPT_POSTFIELDS, vec[i-1].c_str());
+					res = curl_easy_perform(curl);
+
+					if (res == 0) {
+						//cout << "enviado vetor " << i << endl;
+						vec.erase(vec.begin()+i-1);
+					}
+				}
+			}
+			else {
+				vec.push_back(json);
+				//cout << "erro! tamanho do vetor: "<< vec.size() << endl;
+			}
 
 			Sleep(1000);
 			curl = curl_easy_init();

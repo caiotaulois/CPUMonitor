@@ -1,8 +1,23 @@
-﻿Build started 01/06/2015 00:35:10.
-     1>Project "C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\CPUMonitor\CPUMonitor.vcxproj" on node 2 (Clean target(s)).
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppClean.targets(75,5): warning : Access to the path 'C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\x64\Release\CPUMonitor.exe' is denied.
-     1>Done Building Project "C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\CPUMonitor\CPUMonitor.vcxproj" (Clean target(s)).
+﻿Build started 02/06/2015 20:02:41.
+     1>Project "C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\CPUMonitor\CPUMonitor.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\packages\curl.7.30.0.2\build\native\../..//build/native/include/" /I"C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\packages\libssh2.1.4.3.1\build\native\..\..\build\native\include\\" /I"C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\packages\openssl.1.0.1.21\build\native\..\..\build\native\include\v110\x64\Release\dynamic\cdecl" /I"C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\packages\openssl.1.0.1.21\build\native\..\..\build\native\include\\" /I"C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\packages\zlib.1.2.8.1\build\native\..\..\build\native\include\\" /Zi /nologo /W3 /WX- /O2 /Oi /GL /D HAS_LIBCURL /D ZLIB_DLL /D HAS_ZLIB /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc110.pdb" /Gd /TP /errorReport:prompt monitor.cpp
+         monitor.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>monitor.cpp(96): warning C4244: '=' : conversion from 'ULONGLONG' to 'CHAR', possible loss of data
+     1>monitor.cpp(135): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>monitor.cpp(140): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\time.inl(112) : see declaration of 'localtime'
+     1>monitor.cpp(144): warning C4996: 'asctime': This function or variable may be unsafe. Consider using asctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\time.h(153) : see declaration of 'asctime'
+     1>monitor.cpp(158): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\x64\Release\CPUMonitor.exe" /INCREMENTAL:NO /NOLOGO "C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\packages\curl.7.30.0.2\build\native\../..//build/native/lib/v110\x64\Release\dynamic\libcurl.lib" "C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\packages\libssh2.1.4.3.1\build\native\..\..\build\native\lib\v110\x64\Release\dynamic\cdecl\libssh2.lib" "C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\packages\openssl.1.0.1.21\build\native\..\..\build\native\lib\v110\x64\Release\dynamic\cdecl\ssleay32.lib" "C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\packages\openssl.1.0.1.21\build\native\..\..\build\native\lib\v110\x64\Release\dynamic\cdecl\libeay32.lib" "C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\packages\zlib.1.2.8.1\build\native\..\..\build\native\lib\v110\x64\Release\dynamic\cdecl\zlib.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\x64\Release\CPUMonitor.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\x64\Release\CPUMonitor.lib" /MACHINE:X64 x64\Release\monitor.obj
+         Generating code
+         Finished generating code
+         CPUMonitor.vcxproj -> C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\x64\Release\CPUMonitor.exe
+     1>Done Building Project "C:\Users\Caio\documents\visual studio 2012\Projects\CPUMonitor\CPUMonitor\CPUMonitor.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.03
+Time Elapsed 00:00:11.03
