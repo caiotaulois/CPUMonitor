@@ -5,19 +5,21 @@ try {
     websocket = new WebSocket(wsUri);
 } catch (erro) {
     $('#idDiv').html('<span style="color: red;">ERRO NA CONEXÃO:</span> ' + erro);
-
 }
+
 websocket.binaryType = "arraybuffer";
 
-websocket.onmessage = function (evt) {
+websocket.onmessage = function (evt) {    
     if (typeof evt.data === "string") {
         var cpuJson = JSON.parse(evt.data);        
         $('#idDiv2').html('<span style="color: red;">'+cpuJson["cpuUsage"]+cpuJson["memoryUsage"]+cpuJson["date"]+'</span> ');
         
         graficoCpu(cpuJson["cpuUsage"], cpuJson["memoryUsage"], cpuJson["date"], cpuJson["hostname"], false);
     } else { }
+    
 };
 websocket.onerror = function (evt) {};
+
 
 function graficoCpu(cpuUsage, memoryUsage, date, hostname, inicial){  
     

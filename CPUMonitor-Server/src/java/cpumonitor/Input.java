@@ -57,6 +57,7 @@ public class Input extends HttpServlet{
         try {
             JsonObject cpuJson = Json.createReader(new StringReader(request.getParameter("json"))).readObject();            
             System.out.println(cpuJson);
+            //(new databaseDAO()).insert(cpuJson);
             run(cpuJson.toString());
         } catch (Exception e) {}
         

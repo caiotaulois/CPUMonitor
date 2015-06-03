@@ -5,7 +5,10 @@
         <group>
             <file>file:/C:/Users/Caio/Documents/NetBeansProjects/CPUMonitor/web/js/monitor.js</file>
             <file>file:/C:/Users/Caio/Documents/NetBeansProjects/CPUMonitor/web/index.html</file>
+            <file>file:/C:/Users/Caio/Documents/NetBeansProjects/CPUMonitor/src/java/cpumonitor/BaseDAO.java</file>
+            <file>file:/C:/Users/Caio/Documents/NetBeansProjects/CPUMonitor/web/META-INF/context.xml</file>
             <file>file:/C:/Users/Caio/Documents/NetBeansProjects/CPUMonitor/src/java/cpumonitor/Input.java</file>
+            <file>file:/C:/Users/Caio/Documents/NetBeansProjects/CPUMonitor/src/java/cpumonitor/databaseDAO.java</file>
         </group>
     </open-files>
 </project-private>
