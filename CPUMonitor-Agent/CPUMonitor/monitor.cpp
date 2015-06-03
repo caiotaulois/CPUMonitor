@@ -172,6 +172,7 @@ int main() {
 			}
 
 			Sleep(1000);
+			curl_easy_cleanup(curl);
 			curl = curl_easy_init();
 		}
 	}
